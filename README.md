@@ -1,6 +1,6 @@
 # For English version, [see below](#english)
 
-# Initializer
+# Initialize
 
 Basis-Code für neue Projekte.
 
@@ -141,7 +141,7 @@ Wenn Sie eine neue Übersichtsseite erstellt haben, müssen Sie diese noch in di
 Dem `title` ist der Navigationstext zugewiesen. Unter diesem Begriff oder Begriffssammlung ist die Seite verknüpft. Unter `item` tragen Sie den Namen der Seite ein. Lassen Sie dabei bitte die Dateiendung `.php` weg.
 
 
-# <a name="#english"></a> Initializer [English Version]
+# <a name="#english"></a> Initialize [English Version]
 
 Codebase for new projects.
 
