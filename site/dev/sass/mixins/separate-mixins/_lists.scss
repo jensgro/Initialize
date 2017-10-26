@@ -1,0 +1,59 @@
+// Die Basis - hier werden die Listenmarkierungen und Abstände entfernt.
+@mixin reset-list{
+	list-style-type: none;
+	&, li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+
+// individuell gestaltbare Listenmarkierungen per Pseudeoelement
+@mixin my-counter($counter: individualNumbers) {
+	list-style-type: none;
+	counter-reset: $counter;
+
+  li {
+    position: relative;
+
+    &:before {
+  		counter-increment: $counter;
+  		//content: counter($counter, decimal)".";
+  		content: counter($counter)".";
+  		position: absolute;
+  		left: -20px;
+  		top: 0;
+  	}
+  }
+}
+
+
+// On the right edge of a listitem is a formatted number
+
+// HTML:
+// <li>Books <span class="number">1345</span></li>
+
+// Usage:
+// span.number {
+//   @include numberCount(#a20000, #fff);
+// }
+// span.number {
+//   @include numberCount(#a20000, #fff, 16px, $radius: 10px);
+// }
+// span.number {
+//   @include numberCount(#a20000, #fff, 12px, 3px, 3px);
+// }
+
+@mixin numberCount($bgcol, $color, $fontsize: 14px, $padding: 5px, $radius:false) {
+	float: right;
+	background-color: $bgcol;
+	color: $color;
+	font-size: $fontsize;
+	display: inline-block;
+	padding: $padding;
+	text-align: center;
+
+	@if $radius {
+		border-radius: $radius;
+	}
+
+}

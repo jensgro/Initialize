@@ -1,0 +1,33 @@
+{
+	"name": "Initialize",
+	"version": "1.0.0",
+	"description": "Basic files and folders for new projects, including a simple styleguide.",
+	"author": {
+		"name": "Jens Grochtdreis",
+		"url": "http://grochtdreis.de",
+		"email": "jens@grochtdreis.de"
+	},
+	"directories": {
+		"development": "site/dev",
+		"html": "site/html",
+		"styleguide": "site/styleguide"
+	},
+	"devDependencies": {
+		"autoprefixer": "*",
+		"cssnano": "*",
+		"grunt": "~1.0.0",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-compress": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-cssstats": "*",
+		"grunt-php2html": "*",
+		"grunt-postcss": "*",
+		"grunt-replace": "*",
+		"grunt-sass": "*",
+		"grunt-w3c-html-validation": "*",
+		"load-grunt-config": "*",
+		"load-grunt-tasks": "*",
+		"time-grunt": "*"
+	}
+}

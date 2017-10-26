@@ -1,0 +1,53 @@
+$colorlist-width:  160px;
+$colorlist-height: 100px;
+
+$colorlist-mb: 60px; // margin-bottom
+$colorlist-mr: 20px; // margin-right
+
+$colors-list: $grey1 $grey2 $grey3 $grey4 $grey5 $grey6 $grey7 $grey8 $grey9 $grey10 $grey11 $orange1 $orange2 $brown1 $red1 $red2 $blue1 $blue2 $blue3  $blue4 $blue5 $green1 $green2 $green3 $green4;
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+  .sg-color-list li:nth-child(#{$i}) {
+      background-color: $current-color;
+
+			// &:before {
+			// 	content: ""+ #{$current-color};
+			// }
+
+			&:after {
+				content: ""+ $current-color;
+			}
+  }
+} 
+
+.sg-color-list {
+  overflow: hidden;
+  &, li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  li {
+    position: relative;
+    float: left;
+    width: $colorlist-width;
+    height: $colorlist-height;
+    margin-right:  $colorlist-mr;
+    margin-bottom: $colorlist-mb;
+
+		&:after { //, &:before 
+			display: block;
+			position: absolute;
+			left: 0;
+		}
+
+		// &:before {
+		// 	bottom: -10px;
+		// }
+
+		&:after {
+			bottom: -20px;
+		}
+  }
+}
+

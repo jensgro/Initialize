@@ -1,0 +1,19 @@
+.sg-infobox {
+	background-color: $sg-infobox-bgcol;
+  padding: 10px;
+  //margin-top: 20px;
+}
+
+.sg-module-info {
+  background: $sg-module-info-bgcol;
+  padding: 20px;
+  margin: 10px 0 0 -10px;
+  font-size: 16px;
+
+  p {
+    margin-bottom: 0;
+  }
+  p + p {
+    margin-top: 10px;
+  }
+}

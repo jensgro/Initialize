@@ -1,0 +1,107 @@
+// Menü öffnen Link
+.sg-menu-link {
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' fill='#333' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+    //content: "\u2630";
+    //padding: 3px;
+    text-decoration: none;
+  }
+}
+
+// Menü schliessen
+.sg-menu-close {
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  a {
+    color: $sg-menu-close-col;
+    text-decoration: none;
+    transition: all 0.25s linear;
+
+    &:before {
+      content: "\2716";
+      display: inline-block;
+      margin-right: 10px;
+    }
+    &:hover, &:focus {
+      color: $sg-menu-close-hover-col;
+    }
+  }
+}
+
+// Der Menü-Container - hat extra wegen der JS-freien-Lösung eine ID.
+// Die kann man dann auch gleich für eine Gestaltung nutzen.
+// Ohne diese ID ist der horizontale Zustand schneller wieder hergestellt.
+
+#sg-menu {
+  min-height: 100vh;
+  width: 20rem;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: -22rem;
+  transition: all 0.5s linear;
+}
+
+#sg-menu:target {
+  left: 0;
+}
+
+// ======= Navigation
+
+.sg-nav-container {
+  background-color: $sg-nav-container-bgcol;
+}
+
+.sg-nav, .sg-nav li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.sg-nav {
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.sg-nav li {
+
+  &:first-child{
+    margin-bottom: 40px;
+  }
+
+  &.active {
+    a {
+      box-shadow: $sg-nav-active-boxshadow;
+      background: #444;
+    }
+  }
+}
+
+.sg-nav {
+
+	a {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 50px;
+    font-size: 16px;
+    color: $sg-nav-col;
+    border-bottom: $sg-nav-border-bottom;
+    text-decoration: none;
+
+		&:hover, &:focus {
+      background-color: $sg-nav-hover-bgcol;
+		}
+	}
+}

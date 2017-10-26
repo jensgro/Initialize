@@ -1,0 +1,52 @@
+body.sg-body {
+  padding: 40px 0 20px 0;
+  background-color: #fafafa;
+  //background-color: $dunkelgrau;
+}
+
+.sg-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sg-pagetitle {
+  font-size: 2.75rem;
+  margin: 0 0 0.75em 0;
+}
+
+// ===== Der Footer
+
+#sg-footer {
+  background-color: $sg-footer-bgcol;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Container-widths
+//.sg-w20 { width:20%; }
+//.sg-w40 { width:40%; }
+//.sg-w60 { width:60%; }
+//.sg-w80 { width:80%; }
+//.sg-w25 { width:25%; }
+//.sg-w33 { width:33.333%; }
+//.sg-w50 { width:50%; }
+//.sg-w66 { width:66.666%; }
+//.sg-w75 { width:75%; }
+//.sg-w38 { width:38.2%; }
+//.sg-w62 { width:61.8%; }

@@ -1,0 +1,25 @@
+/*  box sizing */
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+
+	&:before, &:after {
+		box-sizing: inherit;
+	}
+}
+
+body {
+	background-color: $body-bgcol;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@include mq(max,$x-large) {
+		max-width: 100%;
+	}
+}

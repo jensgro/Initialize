@@ -1,0 +1,8 @@
+.table-simplistic {
+	&, thead, tbody, th, td {
+		border: none;
+	}
+	th, td {
+		padding: 4px 6px 4px 0;
+	}
+}

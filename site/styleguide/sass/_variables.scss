@@ -1,0 +1,55 @@
+//  ===== Farbvariablen
+$black: #111;
+$white: #FBF9F9;
+$orange: #fd8700;
+$myred: #a20000;
+
+$hellgrau: #ebebeb; // #f0f0ec
+$mittelgrau: #e3e3e3;
+$dunkelgrau: #303030;
+
+$mittelblau: #1976d2;
+$blau1: #0077b5;
+$blau2: #345f6f;
+
+// ===== Navigation
+$sg-nav-container-bgcol: #333 ;
+$sg-nav-1st-col: $blau2;
+$sg-nav-col: $hellgrau;
+$sg-nav-hover-bgcol: #444;
+$sg-nav-active-boxshadow: inset 5px 0 0 #fd8700, inset 6px 0 0 #222;
+$sg-nav-border-bottom: 2px solid #222;
+$sg-menu-close-col: $hellgrau;
+$sg-menu-close-hover-col: $orange;
+
+// ===== Der Modulcontainer
+$sg-module-cnt-border: 3px solid $hellgrau;
+
+// ===== Modultitel
+$sg-title-col: $black;
+$sg-title-bgcol: lighten($hellgrau, 3);
+
+// ===== Previewbutton
+$preview-button-bgcol: $hellgrau;
+
+// ==== Infobox
+$sg-infobox-bgcol: $hellgrau;
+$sg-module-info-bgcol: $hellgrau;
+
+// ==== Quellcode
+$source-infos-col: #333;
+$source-infos-bgcol: $hellgrau;
+$source-infos-border: 1px solid darken($hellgrau, 15);
+
+// ====== Footer
+$sg-footer-bgcol: $hellgrau;
+
+// ====== Tabs
+$sg-tabs-border: $source-infos-border;
+$sg-tab-active-button-bgcol: $hellgrau; // $hellgrau
+$sg-tab-button-bgcol: #fff; // darken($sg-tab-active-button-bgcol, 10)
+$sg-tab-button-col: $blau1;
+$sg-tab-content-bgcol: $hellgrau;
+$sg-tab-button-hover-col: $black;
+$sg-tab-button-hover-bgcol: $hellgrau;
+$sg-tab-svg-color: #333;

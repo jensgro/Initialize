@@ -1,0 +1,29 @@
+// ------- Links -----------------------------
+@mixin a-tdn-tdu{
+	text-decoration: none;
+	&:hover, &:focus {text-decoration: underline;}
+}
+
+@mixin a-tdu-tdn{
+	text-decoration: underline;
+	&:hover, &:focus {text-decoration: none;}
+}
+
+// ================= Linkcolors
+
+//	a {
+//	  @include link-colors();
+//	}
+//
+//	a {
+//	  @include link-colors($hover: #03f);
+//	}
+
+@mixin link-colors($text:#000, $hover:#a20000) {
+  color: $text;
+  text-decoration: underline;
+  &:hover, &:focus {
+    color: $hover;
+    text-decoration: none;
+  }
+}

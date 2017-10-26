@@ -1,0 +1,23 @@
+.gradient1 {
+  background-color: $red2;
+  background: linear-gradient(to bottom, lighten($red1, 30),$red2 100%);
+}
+
+.gradient2 {
+  background-color: $orange2;
+  background: linear-gradient(to bottom, $orange1, $orange2);
+}
+
+.gradient3 {
+  background-color: $grey11;
+  background: linear-gradient(to bottom, $grey2, $grey11);
+}
+
+.gradient4 {
+  background-color: $green1;
+  background: linear-gradient(to bottom, $green4, $green1);
+}
+
+.sg-gradient-demo div {
+  height: 100px;
+}

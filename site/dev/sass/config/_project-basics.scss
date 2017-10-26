@@ -1,0 +1,10 @@
+@function strip-unit($value) {
+   @return $value / ($value * 0 + 1);
+}
+
+// ----- Hintergrundfarben
+$body-bgcol: #fff;
+$intro-bgcol: #fff;
+
+// ----- Footer
+$footer-bgcol: $col1;

@@ -1,0 +1,27 @@
+.breadcrumb-simple {
+	ul {
+		@include clearfix;
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+
+		li {
+			float: left;
+			margin-left: 10px;
+			padding-left: 0;
+
+			&:first-child {
+				margin-left: 0;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			&:before {
+				content:"\25B8";
+				display: inline-block;
+			}
+		}
+	}
+}

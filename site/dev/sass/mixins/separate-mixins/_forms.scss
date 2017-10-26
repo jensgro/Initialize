@@ -1,0 +1,22 @@
+// usage:
+//       .test {
+//           @include placeholder{
+//               color: red;
+//               background: white;
+//           }
+//       }
+// http://caniuse.com/#feat=input-placeholder
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+	  @content;
+	}
+	&:-moz-placeholder {
+	  @content;
+	}
+	&::-moz-placeholder {
+	  @content;
+	}
+	&:-ms-input-placeholder {
+	  @content;
+	}
+}

@@ -1,0 +1,35 @@
+.colored-table {
+	thead {
+		th {
+			background-color: $colored-table-th-background-color;
+		}
+	}
+	
+	tbody {
+		td {
+			background-color: $colored-table-td-background-color;
+		}
+	}
+}
+
+.colored-table-2 {
+	thead {
+		th {
+			background-color: $colored-table-th-2-background-color;
+		}
+	}
+}
+
+.colored-table-3 {
+	border-top: $colored-table-3-border ;
+	border-bottom: $colored-table-3-border;
+	margin-bottom: 10px;
+	
+	& + h3 {
+		margin-top: 20px;
+	}
+	
+	th {
+		background-color: $colored-table-3-th-background-color;
+	}
+}

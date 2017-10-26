@@ -1,0 +1,72 @@
+.sg-tabs {
+  margin: 20px 0 0 0;
+  border-top: $sg-tabs-border;
+}
+
+.sg-tab-links {
+  display: block;
+  //background-color: $sg-tab-button-bgcol;
+  margin-bottom: 0;
+
+  &, li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+
+    &.active {
+      button, button:hover, button:focus {
+        background: $sg-tab-active-button-bgcol;
+      }
+    }
+
+    button {
+      border: none;
+      background-color: $sg-tab-button-bgcol;
+      color: $sg-tab-button-col;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: all linear 0.15s;
+
+      &:hover, &:focus {
+        background: $sg-tab-button-hover-bgcol;
+        color: $sg-tab-button-hover-col;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+
+.sg-tab-content {
+  background: $sg-tab-content-bgcol;
+}
+
+.sg-tab {
+  padding: 20px;
+
+  .sg-module-info {
+    margin-left: 0;
+  }
+}
+
+
+.sg-tab-headline {
+  font-size: 20px;
+}
+
+
+// Die SVG-Icons
+.sg-tabs-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: $sg-tab-svg-color;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}

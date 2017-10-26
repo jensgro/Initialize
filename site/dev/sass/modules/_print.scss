@@ -1,0 +1,47 @@
+@media print {
+
+	body {
+		font-size: $print-fontsize;
+		padding: 0 5px;
+		color: #000 !important;
+		background-color: #fff !important;
+	}
+
+	nav,
+  .searchform,
+	#footer,
+	.portrait,
+	h1 a:after,
+	.cta,
+	.content p[data-icon],
+	.speakerdeck-iframe {
+		display:none;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-size: $print-fontsize*1.5;
+		page-break-after:avoid;
+		color: #000 !important;
+	}
+
+	article p {max-width: 100%;}
+	.pills li {color: #000;background-color: transparent;}
+
+
+	@if $print-abbreviation == true {
+		abbr[title]:after,
+		acronym[title]:after {
+			content:'(' attr(title) ')';
+		}
+	}
+
+	@if $print-href == true {
+		a[href]:after {
+			content:" <URL:"attr(href)">";
+			color:#444;
+			background:inherit;
+			font-style:italic;
+		}
+	}
+
+}

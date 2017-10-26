@@ -1,0 +1,54 @@
+// Listen
+// -------- Listen
+$show-optional-color: 						$color1;
+$numbered-list-li-border-bottom: 			1px solid $color1;
+$numbered-list-span-color: 					$black;
+
+$numbered-list-1-span-color: 				$black;
+$numbered-list-1-span-background-color: 	$color3;
+$numbered-list-1-label-background-color: 	$color3;
+
+$numbered-list-2-span-background-color: 	$color3;
+$numbered-list-2-span-color: 				$black;
+
+//-------- jQuery Tabs ---------------------
+$jqtabs-border:                     2px solid $color2;
+$jqtabs-tabs-bgcol:                 $color3;
+$jqtabs-tabs-height:                32px;
+$jqtabs-tabs-col:                   $color3;
+$jqtabs-tabs-hover-col:             #000;
+$jqtabs-tabs-hover-bgcol:           #fff;
+$jqtabs-tabs-current-bgcol:         #fff;
+$jqtabs-tabs-current-col:           #000;
+$jqtabs-tabbody-padding:            1em;
+$jqtabs-tabs-font-size:  			12px;
+$jqtabs-number-background-color: 	$color3;
+$jqtabs-number-color: 				$black;
+
+// -------------- Breadcrumb mit Pfeil
+$breadcrumb-color: 		  			$black;
+$breadcrumb-fill: 		  			$color1;
+$breadcrumb-fill-behind:  			$breadcrumb-fill;
+$breadcrumb-active-color: 			#fff;
+$breadcrumb-active-fill:  			$breadcrumb-color;
+$breadcrumb-border: 				1px solid $color1;
+$breadcrumb-thin-arrow-thickness: 	2px;
+$breadcrumb-item-nr: 				5;
+$breadcrumb-border-width: 			10px;
+$breadcrumb-additional-width: 		10px;
+$breadcrumb-item-compensation: 		($breadcrumb-border-width / ($breadcrumb-item-nr - 1)) + 1;
+$breadcrumb-item-compensation-ie: $breadcrumb-item-compensation + 2; // keine Ahnung, warum Plus statt Minus
+
+$breadcrumb-width:                 958px;
+
+// ------------ Subnav
+$subnavheadline-color: 		$color4;
+
+// ----------- Tabellen
+$colored-table-th-background-color: 	$color3;
+$colored-table-td-background-color: 	$color4;
+
+$colored-table-th-2-background-color: 	$color1;
+
+$colored-table-3-th-background-color: 	$color3;
+$colored-table-3-border: 				2px solid $black;

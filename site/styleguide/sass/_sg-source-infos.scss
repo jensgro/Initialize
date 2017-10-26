@@ -1,0 +1,33 @@
+.sg-source-infos {
+  border-top: $source-infos-border;
+  margin-bottom: 20px;
+  //padding-bottom: 20px;
+  border-bottom: $source-infos-border;
+}
+
+.sg-source-infos__headline,
+.sg-infobox {
+  padding: 10px;
+  background-color: $source-infos-bgcol;
+  color: $source-infos-col;
+}
+
+.sg-source-infos__headline {
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  &.selected {
+    margin-bottom: 0;
+  }
+}
+
+.sg-source-infos__data{
+  background-color: $source-infos-bgcol;
+  margin: 0 0 10px 0;
+  padding: 10px;
+
+  pre + pre {
+    margin-top: 20px;
+  }
+
+}

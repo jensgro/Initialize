@@ -1,0 +1,29 @@
+table {
+	ul, ol {
+		margin-bottom: 0;
+	}
+}
+
+.table-50-50 {
+	td, th {
+		width: 50%;
+	}
+}
+
+.table-25-75 {
+	th {
+		width: 25%;
+	}
+	td {
+		width: 75%;
+	}
+}
+
+.table-33-66 {
+	th {
+		width: 33%;
+	}
+	td {
+		width: 66%;
+	}
+}

@@ -1,0 +1,35 @@
+// Hier kommt die Hauptnavigation
+
+.main-navigation {
+
+}
+
+.main-navigation-list {
+  display: flex;
+
+  &, li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    //für die alten Browser
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    background-color: #345F6F;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      background-color: #a20000;
+    }
+  }
+}

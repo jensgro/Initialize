@@ -1,0 +1,22 @@
+.no-list {
+	@include reset-list; 
+	margin-top: 15px;
+
+	& + * {
+		margin-top: 15px;
+	}
+}
+
+
+.show-optional {
+	text-decoration: underline;
+	color: $color1;
+
+	&:hover, &:focus {
+		cursor: pointer;
+	}
+}
+
+.is-optional {
+	display: none;
+}

@@ -1,0 +1,106 @@
+// Function for transforming pixel into rem
+//  /* Usage */
+//  .test 	{font-size: rem(18);}
+//  .test2 	{font-size: rem(18, 20);}
+//
+//  /* Output */
+//  .test 	{font-size: 1.125rem;}
+//  .test2 	{font-size: 0.9rem;}
+
+@function rem($font-size, $base-font-size: 16) {
+	@return $font-size / $base-font-size * 1rem;
+}
+
+// ======= Clearfix
+@mixin clearfix {
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+// 		====================================================
+// 		hide text visually but accessible for screen readers
+// 		====================================================
+//    .screen-reader-text {
+//      @include sr-hide-text;
+//    }
+//
+
+	@mixin sr-hide-text {
+			position: absolute !important;
+			clip: rect(1px 1px 1px 1px);
+			clip: rect(1px, 1px, 1px, 1px);
+			height: 1px;
+			overflow: hidden;
+			width: 1px;
+	}
+
+  //
+  // 	====================================
+  // 	Centering Mixin
+  // 	====================================
+  // 	/* Usage */
+  //  .centerme {
+  //    @include center;
+  //  }
+
+  	@mixin center {
+  		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		transform: translateX(-50%) translateY(-50%);
+  	}
+
+
+    // 		====================================
+    // 		Maintain Aspect Ratio Mixin
+    // 		====================================
+    //
+    // 	/* Usage */
+    //  .videocnt {
+    //    @include aspect-ratio(800px, 600px);
+    //  }
+    	@mixin aspect-ratio($width, $height) {
+    		position: relative;
+    		&:before {
+    			display: block;
+    			content: " ";
+    			width: 100%;
+    			padding-top: ($height / $width) * 100%;
+    		}
+
+    		> * {
+    			position: absolute;
+    			top: 0;
+    			left: 0;
+    			right: 0;
+    			bottom: 0;
+    		}
+    	}
+
+// 	====================================
+// 	Covering Mixin
+// 	====================================
+//
+// 	/* Usage */
+//  .coverer {
+//    @include stretchme;
+//  }
+
+	@mixin stretchme {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+  }

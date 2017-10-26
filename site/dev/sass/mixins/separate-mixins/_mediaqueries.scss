@@ -1,0 +1,54 @@
+// ---- Usage ------
+// $bp-min: 300px;
+//
+// .test {
+//     color: red;
+//     @include mq(min, $bp-min){
+//         color: blue;
+//     }
+// }
+// -----------------------------------
+// .test2 {
+//     color: red;
+//     @include mq(min, 300px){
+//         color: blue;
+//     }
+// }
+// -----------------------------------
+//  .test3 {
+//    color: red;
+//    @include mq(min-max, 400px, 800px) {
+//     color: blue;
+//    }
+//  }
+
+@mixin mq($dimension, $breakpoint, $breakpoint2:false) {
+	@if $dimension == min {
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else if $dimension == max {
+		@media screen and (max-width: $breakpoint) {
+			@content;
+		}
+	} @else if $dimension == min-max {
+		@media screen and (min-width: $breakpoint) and (max-width: $breakpoint2) {
+			@content;
+		}
+	}
+}
+
+// ==============================================================
+// "bulletproof" hi-dpi media query (vulgo: retina)
+// https://gist.github.com/ddemaree/5470343
+@mixin retina($ratio: 1.5) {
+  $dpi: $ratio * 96;
+  $opera-ratio: $ratio * 100;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: #{$ratio}),
+         only screen and (     -o-min-device-pixel-ratio: '#{$opera-ratio}/100'),
+         only screen and (                min-resolution: #{$dpi}dpi),
+         only screen and (                min-resolution: #{$ratio}dppx) {
+    @content;
+  }
+}

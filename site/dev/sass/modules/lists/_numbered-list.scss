@@ -1,0 +1,77 @@
+.numbered-list {
+	li {
+		overflow: hidden;
+		// font-size: 12px;
+		border-bottom: $numbered-list-li-border-bottom;
+		margin: 0 0 4px 0;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	span {
+		float: right;
+		color: $numbered-list-span-color;
+		text-align: right;
+	}
+}
+
+.numbered-list-1 {
+	
+	li {
+		padding-bottom: 2px;
+	}
+	
+	span {
+		width: 30px;
+		font-size: 10px;
+		text-align: center;
+		color: $numbered-list-1-span-color;
+		background-color: $numbered-list-1-span-background-color;
+	}
+	
+	label {
+		margin-left: 5px;
+	}
+	
+	input:checked ~ span {
+		background-color: $numbered-list-1-span-color;
+	}	
+
+	input:checked ~ label {
+		padding: 2px 3px;
+		background-color: $numbered-list-1-label-background-color;
+	}
+}
+
+// Abwandlung für Subnavigation
+
+.numbered-list-2 {
+	li {
+		padding-bottom: 2px;
+		border-bottom: none;
+	}
+	
+	span {
+		float: none;
+		display: inline-block;
+		width: 30px;
+		font-size: 10px;
+		text-align: center;
+		background-color: $numbered-list-2-span-background-color;
+		color: $numbered-list-2-span-color;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+
+}
+
+.numbered-list-headline {
+	overflow: hidden;
+	
+	span {
+		float: right;
+	}
+}
+

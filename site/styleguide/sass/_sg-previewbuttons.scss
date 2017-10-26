@@ -1,0 +1,25 @@
+.sg-preview-buttons {
+  margin: 20px 0;
+
+  > button {
+    border: none;
+    background-color: $preview-button-bgcol;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    &:hover, &:focus, &:active, &.selected {
+      background-color: darken($preview-button-bgcol,20);
+      outline: 0;
+      cursor: pointer;
+    }
+  }
+}
+.sg-preview-buttons-headline {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 20px 0 10px;
+  &:after {
+    content: ": ";
+  }
+}

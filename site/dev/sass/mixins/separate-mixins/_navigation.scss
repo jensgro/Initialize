@@ -1,0 +1,66 @@
+@mixin hornav-inline {
+	list-style-type: none;
+	&, li {
+		margin: 0;
+		padding: 0;
+	}
+	li, a {
+		display: inline-block;
+	}
+}
+
+@mixin hornav-float {
+	list-style-type: none;
+	&, li {
+		margin: 0;
+		padding: 0;
+		a {
+			display: block;
+		}
+    li {
+      float: left;
+    }
+	}
+}
+
+// Horizontal navigation wth Flexbox
+// Usage
+// .hornav {
+//   @include hornav-flex(between);
+// }
+
+@mixin hornav-flex($alignment: left) {
+	list-style-type: none;
+	display: flex;
+
+	@if $alignment == left {
+    justify-content: flex-start;
+  }
+	@if $alignment == right {
+    justify-content: flex-end;
+  }
+	@if $alignment == around {
+    justify-content: space-around;
+  }
+	@if $alignment == between {
+    justify-content: space-between;
+  }
+
+	&, li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+
+// Basics for a vertical navigation
+// Usage
+// .secondary-navigation {
+//   @include vertnav;
+// }
+@mixin vertnav {
+  list-style-type: none;
+    &, li {
+      margin-left: 0;
+      padding-left: 0;
+  }
+}
